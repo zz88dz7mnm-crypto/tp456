@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estado y Gobierno</title>
+  <meta name="description" content="Ciudadanía y Política, Unidad 2: los TP 4, 5 y 6 explicados de forma interactiva, con juegos y simulacro." />
+  <meta name="theme-color" content="#0a0c10" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0c10'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23e8b64c'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <div class="progress" aria-hidden="true"><span class="progress-bar"></span></div>
+  <header class="topbar">
+    <a href="#inicio" class="brand"><em class="brand-sun" aria-hidden="true"></em><span>Estado y Gobierno</span></a>
+    <div class="topbar-right">
+      <span class="score-chip" title="Juegos completados"><span class="score-dot"></span><b id="gamesDone">0</b>/<span id="gamesTotal">7</span> juegos</span>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="menu-label">Índice</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Índice" hidden>
+    <div class="menu-inner">
+      <p class="menu-kicker">Recorrido</p>
+      <ol class="menu-list" id="menuList"></ol>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" data-label="Inicio">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-sun" aria-hidden="true"><i></i></div>
+      <div class="hero-inner">
+        <p class="kicker hero-kicker">Ciudadanía y Política · Unidad 2 · Estado y Gobierno</p>
+        <h1 class="hero-title" id="heroTitle">¿Quién manda acá?</h1>
+        <p class="hero-sub">Los trabajos prácticos 4, 5 y 6 sin leer letra por letra: bajá, mirá, jugá y llegá a la clase sabiendo.</p>
+        <div class="hero-meta">
+          <span><b>TP4</b> El Estado</span><span class="sep">/</span>
+          <span><b>TP5</b> Los gobiernos</span><span class="sep">/</span>
+          <span><b>TP6</b> Gobernar de verdad</span>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>Bajá</span><i></i></div>
+    </section>
+
+    <!-- ============ MAPA ============ -->
+    <section class="intro" id="mapa" data-label="El mapa">
+      <div class="wrap">
+        <p class="kicker" data-reveal>Tres preguntas, tres prácticos</p>
+        <h2 class="display" data-reveal>Primero el <em>Estado</em>, después quién lo <em>gobierna</em> y, al final, si puede gobernar.</h2>
+        <div class="tp-map">
+          <a href="#tp4" class="tp-card" data-reveal>
+            <span class="tp-n">TP4</span>
+            <span class="tp-q">¿Qué es el Estado?</span>
+            <span class="tp-list">Definición · atributos · territorio · soberanía · formas históricas</span>
+          </a>
+          <a href="#tp5" class="tp-card" data-reveal>
+            <span class="tp-n">TP5</span>
+            <span class="tp-q">¿Cómo se gobierna?</span>
+            <span class="tp-list">Monarquía, aristocracia, democracia · república · dictadura · autocracia</span>
+          </a>
+          <a href="#tp6" class="tp-card" data-reveal>
+            <span class="tp-n">TP6</span>
+            <span class="tp-q">¿Ganar alcanza?</span>
+            <span class="tp-list">Milei y el Congreso · debates y programas · federalismo</span>
+          </a>
+        </div>
+        <div class="howto" data-reveal>
+          <div><span class="tag tag-gold">En criollo</span><p>La idea explicada como te la contaría un compañero.</p></div>
+          <div><span class="tag tag-wine">Para la clase</span><p>Las palabras clave del texto que no pueden faltar.</p></div>
+          <div><span class="tag tag-blue">Jugá</span><p>Minijuegos de un minuto. Tu progreso queda guardado en este dispositivo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TP4 · EL ESTADO
+         ========================================================= -->
+    <section class="tp-cover" id="tp4" data-label="TP4 · El Estado">
+      <div class="tp-cover-inner">
+        <p class="kicker">Trabajo práctico</p>
+        <p class="tp-big" data-cover>4</p>
+        <h2 class="tp-title">El Estado</h2>
+        <p class="tp-sub">Concepto, atributos, territorio, soberanía y cómo fue cambiando en la historia.</p>
+      </div>
+    </section>
+
+    <section class="chapter" id="definicion" data-label="TP4 · Definición de Estado">
+      <div class="chapter-head wrap">
+        <span class="chapter-num" data-reveal>1</span>
+        <h2 class="display" data-reveal>Armemos un <em>Estado</em></h2>
+        <p class="lede" data-reveal>La definición del texto tiene <b>seis piezas</b>. Bajá y mirá cómo se construye, pieza por pieza.</p>
+      </div>
+
+      <div class="scrolly" data-scrolly="estado">
+        <div class="scrolly-visual">
+          <div class="build" id="build" aria-hidden="true">
+            <div class="build-roof"><span>ESTADO</span></div>
+            <div class="build-cols">
+              <span class="col" data-b="0"><i>Historia</i></span>
+              <span class="col" data-b="1"><i>Fuerza</i></span>
+              <span class="col" data-b="2"><i>Territorio</i></span>
+              <span class="col" data-b="3"><i>Población</i></span>
+              <span class="col" data-b="4"><i>Normas</i></span>
+            </div>
+            <div class="build-base" data-b="5"><span>Reconocimiento de otros Estados</span></div>
+            <p class="build-count"><b id="buildCount">0</b>/6 piezas</p>
+          </div>
+        </div>
+        <div class="scrolly-steps">
+          <div class="step" data-step="0"><div class="step-card"><span class="step-n">1</span><h3>Forma de organización histórica</h3><p>La crearon los seres humanos en un momento de la historia: <b>no existió siempre</b>.</p></div></div>
+          <div class="step" data-step="1"><div class="step-card"><span class="step-n">2</span><h3>Derecho exclusivo al uso de la fuerza</h3><p>Solo el Estado puede usar la fuerza de manera <b>legítima</b> para hacer cumplir las normas: es el <b>monopolio de la fuerza</b>.</p></div></div>
+          <div class="step" data-step="2"><div class="step-card"><span class="step-n">3</span><h3>Territorio</h3><p>El <b>espacio geográfico</b> sobre el que ejerce su poder.</p></div></div>
+          <div class="step" data-step="3"><div class="step-card"><span class="step-n">4</span><h3>Población</h3><p>El <b>conjunto de personas</b> sobre las que ejerce ese poder.</p></div></div>
+          <div class="step" data-step="4"><div class="step-card"><span class="step-n">5</span><h3>Conjunto de normas</h3><p>Las leyes y reglas que regulan su actividad: el <b>orden jurídico</b>.</p><p class="aside">Ojo: lo regula <b>generalmente</b>, no siempre. En los Estados <b>autoritarios</b> el grupo que gobierna llega por la fuerza y suspende derechos como la libertad y los derechos políticos.</p></div></div>
+          <div class="step" data-step="5"><div class="step-card step-gold"><span class="step-n">6</span><h3>Reconocimiento de otros Estados</h3><p>Los demás países del mundo <b>lo aceptan como tal</b>. ¡Estado completo!</p></div></div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="grid-2">
+          <div class="card" data-reveal>
+            <span class="tag tag-blue">Pregunta 2</span>
+            <h3>¿Tiene fecha de inicio o de final?</h3>
+            <p class="big-def"><b>No.</b></p>
+            <p>La definición dice que es una forma de organización <b>histórica</b>: apareció en algún momento y puede transformarse, pero <b>no fija una fecha</b> de comienzo ni de final. Cuándo y cómo surgió se estudia aparte, en la Actividad 2.</p>
+          </div>
+          <div class="card" data-reveal>
+            <span class="tag tag-blue">Pregunta 3</span>
+            <h3>Las piezas que le faltan a la definición</h3>
+            <p>El texto (págs. 40-41) enumera más atributos de los que entran en la definición. Quedan afuera:</p>
+            <ul class="missing">
+              <li><b>Monopolio fiscal</b><span>Controla sus recursos con impuestos y rentas, y regula su economía a través de la burocracia.</span></li>
+              <li><b>Organización</b><span>La burocracia estatal, que hace cumplir normas y directivas.</span></li>
+              <li><b>Soberanía</b><span>Aparece junto al reconocimiento, pero la definición no la nombra.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="highlight-def" id="fullDef" data-reveal>
+          <p class="kicker">Pregunta 4 · La definición completa</p>
+          <p class="hl-text">El Estado es una forma de organización histórica que tiene el derecho exclusivo al uso de la fuerza dentro de un territorio determinado y sobre una población concreta. Controla sus propios recursos económicos mediante impuestos y rentas (monopolio fiscal) y cuenta con una organización, la burocracia estatal, que lleva a cabo sus normas y directivas. Por lo general se rige por un ordenamiento normativo que regula a la sociedad y al propio Estado. Además, es soberano y los demás Estados del mundo lo reconocen como tal.</p>
+        </div>
+
+        <div class="game-slot" data-reveal><div class="game" id="gameEstado"></div></div>
+
+        <div class="boxes">
+          <div class="box box-criollo" data-reveal>
+            <span class="tag tag-gold">En criollo</span>
+            <p>Un Estado es como un club gigante con cancha propia (<b>territorio</b>), socios (<b>población</b>), reglamento (<b>normas</b>) y el único árbitro que puede sacar tarjeta roja (<b>fuerza</b>). Además cobra la cuota (<b>monopolio fiscal</b>), tiene empleados (<b>burocracia</b>), no le rinde cuentas a otro club (<b>soberanía</b>) y los demás clubes lo reconocen.</p>
+          </div>
+          <div class="box box-examen" data-reveal>
+            <span class="tag tag-wine">Para la clase</span>
+            <ul class="chips"><li>organización histórica</li><li>monopolio de la fuerza</li><li>territorio</li><li>población</li><li>orden jurídico</li><li>reconocimiento</li><li>monopolio fiscal</li><li>burocracia</li><li>soberanía</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TERRITORIO (horizontal) ============ -->
+    <section class="vida" id="territorio" data-label="TP4 · El territorio">
+      <div class="vida-pin">
+        <div class="vida-head">
+          <p class="kicker">Pregunta 5 · El territorio</p>
+          <h2 class="display">¿Siempre fue igual?</h2>
+          <p class="vida-hint">No: creció y se achicó. Seguí bajando y mirá cómo cambia <span aria-hidden="true">→</span></p>
+        </div>
+        <div class="vida-track" id="vidaTrack">
+          <article class="hito"><span class="hito-year">1776</span><div class="size" style="--s:1"><i></i><small>enorme</small></div><h3>Origen amplio</h3><p>El <b>Virreinato del Río de la Plata</b> abarcaba lo que hoy es Argentina, Uruguay, Paraguay y Bolivia, entre otros.</p></article>
+          <article class="hito hito-dark"><span class="hito-year">1811–28</span><div class="size" style="--s:.45"><i></i><small>se achica</small></div><h3>Después de Mayo</h3><p>Se separan <b>Paraguay</b> (1811), el Alto Perú → <b>Bolivia</b> (1825) y la Banda Oriental → <b>Uruguay</b> (1828). Pampa, Patagonia y Chaco seguían en manos de pueblos originarios.</p></article>
+          <article class="hito hito-accent"><span class="hito-year">1878–85</span><div class="size" style="--s:.75"><i></i><small>crece</small></div><h3>Campaña del Desierto y Chaco</h3><p>El Estado incorpora la <b>Pampa, la Patagonia y parte del Chaco</b>: primero Territorios Nacionales, después provincias.</p></article>
+          <article class="hito"><span class="hito-year">1881</span><div class="size" style="--s:.75"><i></i><small>se define</small></div><h3>Tratado con Chile</h3><p>Fija los límites en la Patagonia y <b>reparte Tierra del Fuego</b> entre ambos países.</p></article>
+          <article class="hito"><span class="hito-year">1961</span><div class="size" style="--s:.75"><i></i><small>en pausa</small></div><h3>Antártida “congelada”</h3><p>Argentina reclama un sector, pero el reclamo queda <b>congelado</b> con el Tratado Antártico.</p></article>
+          <article class="hito hito-dark"><span class="hito-year">1984</span><div class="size" style="--s:.72"><i></i><small>pierde islas</small></div><h3>Conflicto del Beagle</h3><p>El Tratado de Paz y Amistad deja <b>Picton, Lennox y Nueva</b> bajo soberanía chilena.</p></article>
+          <article class="hito hito-accent"><span class="hito-year">2020</span><div class="size" style="--s:.95"><i></i><small>suma mar</small></div><h3>Ley 27.557</h3><p>Fija el límite de la <b>plataforma continental</b>: +1.782.000 km² de lecho y subsuelo más allá de las 200 millas. Son derechos sobre el suelo marino, <b>no sobre toda el agua</b>.</p></article>
+        </div>
+        <div class="vida-bar" aria-hidden="true"><span id="vidaBar"></span></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="soberania" data-label="TP4 · Soberanía y problemáticas">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>2</span>
+          <h2 class="display" data-reveal>Soberanía: <em>nadie</em> por encima</h2>
+          <p class="lede" data-reveal>Es el <b>poder supremo</b> del Estado sobre su territorio y su población: decide y hace cumplir sus normas sin depender de ningún otro poder. Va de la mano del <b>reconocimiento</b>: los otros Estados aceptan su dominio y renuncian a aplicar sus normas ahí. Así se <b>legitiman mutuamente</b>.</p>
+        </div>
+
+        <div class="sov" data-reveal>
+          <div class="sov-side">
+            <div class="sov-ring sov-in" aria-hidden="true"><span>Estado</span></div>
+            <h3>Soberanía interna</h3>
+            <p>Dentro del territorio, <b>nadie está por encima</b> del Estado.</p>
+          </div>
+          <div class="sov-side">
+            <div class="sov-ring sov-out" aria-hidden="true"><span>Estado</span><i></i><i></i><i></i></div>
+            <h3>Soberanía externa</h3>
+            <p>El Estado es <b>independiente</b> de los demás Estados.</p>
+          </div>
+        </div>
+        <p class="note" data-reveal>En una democracia, la soberanía <b>reside en el pueblo</b>, que la ejerce a través de sus representantes (Constitución Nacional, arts. 22 y 33).</p>
+
+        <h3 class="sub-title" data-reveal>Problemas de territorio y soberanía</h3>
+        <div class="cases">
+          <article class="case" data-reveal>
+            <span class="case-tag">Territorio + soberanía</span>
+            <h4>Malvinas, Georgias y Sándwich del Sur</h4>
+            <ul class="mini-tl"><li><b>1833</b> El Reino Unido las ocupa y administra.</li><li><b>1965</b> ONU, Res. 2065: reconoce la disputa e invita a negociar.</li><li><b>1994</b> La Constitución ratifica la soberanía argentina y su recuperación como objetivo permanente.</li></ul>
+          </article>
+          <article class="case" data-reveal>
+            <span class="case-tag">Territorio</span>
+            <h4>Plataforma continental</h4>
+            <p>La Comisión de Límites de la ONU todavía no analizó las zonas en disputa con el Reino Unido ni el sector del Tratado Antártico.</p>
+          </article>
+          <article class="case" data-reveal>
+            <span class="case-tag">Soberanía · 2004</span>
+            <h4>La fragata USS De Wert</h4>
+            <p><b>250 marinos</b> de EE. UU. quisieron desembarcar en Buenos Aires sin identificarse. Solo pudieron cuando se cumplió la <b>ley 25.880</b>: tropas extranjeras solo si se identifican y van sin armas. Argentina además les negó inmunidad.</p>
+          </article>
+          <article class="case" data-reveal>
+            <span class="case-tag">Soberanía</span>
+            <h4>El avión en Ezeiza</h4>
+            <p>Aterrizó con <b>armas largas</b> y materiales que no figuraban en la documentación, para un curso de paracaidistas. Un intento de violar las leyes argentinas que las autoridades <b>impidieron</b>.</p>
+          </article>
+        </div>
+
+        <h3 class="sub-title" data-reveal>Pregunta 7 · ¿Cómo están los otros atributos hoy?</h3>
+        <div class="health">
+          <div class="hl-row" data-reveal><span class="hl-name">Población</span><span class="hl-bar"><i style="--v:.55"></i></span><span class="hl-txt">Pobreza y desigualdad entre regiones: no todos acceden a los mismos derechos.</span></div>
+          <div class="hl-row" data-reveal><span class="hl-name">Uso de la fuerza</span><span class="hl-bar"><i style="--v:.5"></i></span><span class="hl-txt">Si no puede imponerse a quienes resisten sus normas, queda limitado: narcotráfico y crimen organizado.</span></div>
+          <div class="hl-row" data-reveal><span class="hl-name">Monopolio fiscal</span><span class="hl-bar"><i style="--v:.5"></i></span><span class="hl-txt">Evasión y trabajo informal: menos recursos para financiarse.</span></div>
+          <div class="hl-row" data-reveal><span class="hl-name">Burocracia</span><span class="hl-bar"><i style="--v:.6"></i></span><span class="hl-txt">Críticas a la calidad de servicios públicos como salud y educación.</span></div>
+          <div class="hl-row" data-reveal><span class="hl-name">Normas</span><span class="hl-bar"><i style="--v:.55"></i></span><span class="hl-txt">En la práctica no siempre se cumplen.</span></div>
+          <div class="hl-row hl-ok" data-reveal><span class="hl-name">Reconocimiento</span><span class="hl-bar"><i style="--v:.95"></i></span><span class="hl-txt">Sin problemas: casi todos reconocen a Argentina. Malvinas es un problema de <b>soberanía y territorio</b>, no de reconocimiento.</span></div>
+        </div>
+        <p class="note small" data-reveal>Las barras son ilustrativas: muestran dónde el TP señala problemas, no una medición.</p>
+      </div>
+    </section>
+
+    <!-- ============ FORMAS DE ESTADO ============ -->
+    <section class="chapter chapter-light" id="formas" data-label="TP4 · El Estado en la historia">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>3</span>
+          <h2 class="display" data-reveal>El Estado como <em>construcción</em> sociohistórica</h2>
+          <p class="lede" data-reveal>Actividad 2. Según la época, el Estado tomó formas muy distintas. Bajá por la historia.</p>
+        </div>
+
+        <ol class="eras" id="eras">
+          <li class="era" data-reveal><span class="era-n">1</span><div><h3>Estado antiguo</h3><p>Distinto según el caso: el <b>oriental</b> (Egipto, Babilonia, Asiria, Persia, China, Japón), el <b>helénico</b> (variaba según la polis) y el <b>romano</b> (monarquía, república e imperio).</p></div></li>
+          <li class="era" data-reveal><span class="era-n">2</span><div><h3>Estado medieval</h3><p>Mil años de cambios. Lo típico: un <b>poder real débil</b>, limitado por los señores feudales y por la Iglesia.</p></div></li>
+          <li class="era era-key" data-reveal><span class="era-n">3</span><div><h3>Estado moderno <small>desde el siglo XV</small></h3><p>Para algunos autores, recién acá se puede hablar de Estado. <b>Monarquía absolutista</b>: el rey vence a los señores feudales y se apoya en una burocracia para administrar el territorio unificado.</p></div></li>
+          <li class="era" data-reveal><span class="era-n">4</span><div><h3>Estado liberal</h3><p>Nace de la lucha de la <b>burguesía</b>: la soberanía pasa del monarca al <b>pueblo</b>. Derechos individuales, división de poderes, función limitada a la seguridad y un rol <b>subsidiario</b> en la economía.</p></div></li>
+          <li class="era" data-reveal><span class="era-n">5</span><div><h3>Estado oligárquico</h3><p>Los derechos no garantizaron igualdad: <b>voto restringido</b> e instituciones que favorecían a quienes más tenían.</p></div></li>
+          <li class="era era-dark" data-reveal><span class="era-n">6</span><div><h3>Crisis del 29 y Estado totalitario</h3><p>Falla el liberalismo económico. El Estado totalitario abarca <b>toda la vida</b>: partido único, control total y terror. De derecha (fascismo, nazismo, falangismo) y de izquierda (Stalin).</p></div></li>
+          <li class="era" data-reveal><span class="era-n">7</span><div><h3>Estado de Bienestar</h3><p>Frente a ese régimen sin libertades, busca cubrir a los más débiles: <b>planificación</b> de la economía y <b>derechos sociales</b>.</p></div></li>
+          <li class="era era-dark" data-reveal><span class="era-n">8</span><div><h3>Burocrático-autoritarios</h3><p>En el sur de América Latina, quienes temían perder ganancias por la redistribución dan <b>golpes de Estado</b> con apoyo militar y de EE. UU. (la última dictadura argentina admiraba a la generación del 80).</p></div></li>
+          <li class="era" data-reveal><span class="era-n">9</span><div><h3>Restauración liberal o neoliberal</h3><p>Con esa violencia se restaura el Estado liberal y el de Bienestar <b>se derrumba</b> rápidamente.</p></div></li>
+        </ol>
+        <p class="note" data-reveal>Lo que comparten todas las formas modernas: el Estado se presenta como un <b>centro exclusivo de autoridad</b>, una unidad jurídica y de poder.</p>
+
+        <h3 class="sub-title" data-reveal>Complemento: ¿de dónde sale el Estado? Los contractualistas</h3>
+        <p class="note" data-reveal>Explican el Estado como un <b>pacto</b> entre los habitantes, que pasan del <b>estado de naturaleza</b> al <b>estado de sociedad</b>.</p>
+        <div class="pact">
+          <div class="pact-card" data-reveal><p class="pact-name">Hobbes</p><p class="pact-why">Sin autoridad, peligro de muerte</p><p>Todos ceden su libertad a un hombre o asamblea con autoridad absoluta.</p><span class="pact-res">Gobierno autoritario</span></div>
+          <div class="pact-card" data-reveal><p class="pact-name">Locke</p><p class="pact-why">Proteger la propiedad</p><p>Un Parlamento elegido por los ciudadanos.</p><span class="pact-res">Gobierno liberal y representativo</span></div>
+          <div class="pact-card" data-reveal><p class="pact-name">Rousseau</p><p class="pact-why">El pueblo decide las leyes</p><p>Un autogobierno directo, parecido al ateniense.</p><span class="pact-res">Autogobierno directo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TP5 · LOS GOBIERNOS
+         ========================================================= -->
+    <section class="tp-cover" id="tp5" data-label="TP5 · Los gobiernos">
+      <div class="tp-cover-inner">
+        <p class="kicker">Trabajo práctico</p>
+        <p class="tp-big" data-cover>5</p>
+        <h2 class="tp-title">Gobiernos y tipos de gobierno</h2>
+        <p class="tp-sub">Cuántos mandan, cómo llegan, qué hace a una república y qué es una dictadura.</p>
+      </div>
+    </section>
+
+    <section class="chapter" id="cantidad" data-label="TP5 · ¿Cuántos gobiernan?">
+      <div class="chapter-head wrap">
+        <span class="chapter-num" data-reveal>a</span>
+        <h2 class="display" data-reveal>¿<em>Cuántos</em> gobiernan?</h2>
+        <p class="lede" data-reveal>Según el número y el origen de quienes ejercen el poder (pág. 45). Cada punto es una persona.</p>
+      </div>
+
+      <div class="scrolly" data-scrolly="cantidad">
+        <div class="scrolly-visual">
+          <div class="people" id="people" aria-hidden="true"></div>
+          <p class="visual-caption" id="peopleCaption">Uno solo</p>
+        </div>
+        <div class="scrolly-steps">
+          <div class="step" data-step="0"><div class="step-card"><h3>Monarquía</h3><p class="big-def">Gobierna <b>una sola persona</b>.</p><p>Por lo general llega al trono por <b>sucesión</b> y ejerce su mandato según las leyes del país.</p></div></div>
+          <div class="step" data-step="1"><div class="step-card"><h3>Aristocracia u oligarquía</h3><p class="big-def">Gobierna <b>un grupo</b>.</p><p>Supuestamente, los mejor formados. En general, los <b>más ricos</b> o quienes tienen preeminencia por tradición o por “sangre”, como la nobleza.</p></div></div>
+          <div class="step" data-step="2"><div class="step-card step-gold"><h3>Democracia</h3><p class="big-def">Gobierna <b>todo el pueblo</b>, directa o indirectamente.</p><p>En realidad se hace lo que decide la <b>mayoría</b>, que debe <b>respetar o tolerar a la minoría</b>.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="eleccion" data-label="TP5 · ¿Cómo llega el ejecutivo?">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>b</span>
+          <h2 class="display" data-reveal>¿Cómo llega el que <em>ejecuta</em>?</h2>
+          <p class="lede" data-reveal>Primera mirada (pág. 46): cómo accede el ejecutivo y <b>cuánto dura</b>.</p>
+        </div>
+
+        <div class="duration">
+          <div class="dur-row" data-reveal><span class="dur-name">Monarquía</span><span class="dur-track"><i class="dur-fill dur-forever"></i></span><span class="dur-txt">Hereditario y <b>de por vida</b></span></div>
+          <div class="dur-row" data-reveal><span class="dur-name">República</span><span class="dur-track"><i class="dur-fill dur-period"></i><i class="dur-fill dur-period"></i><i class="dur-fill dur-period"></i></span><span class="dur-txt">Elegido por un <b>período determinado</b></span></div>
+          <div class="dur-row" data-reveal><span class="dur-name">Dictadura</span><span class="dur-track"><i class="dur-fill dur-coup"></i></span><span class="dur-txt">Un núcleo da el <b>golpe</b> y se queda lo que puede</span></div>
+        </div>
+
+        <p class="lede" data-reveal style="margin-top:60px">Segunda mirada (pág. 47): <b>¿de dónde sale el ejecutivo?</b> Tocá cada modelo.</p>
+        <div class="tabs" role="tablist" data-reveal>
+          <button role="tab" class="tab is-on" data-sys="parl" aria-selected="true">Parlamentario</button>
+          <button role="tab" class="tab" data-sys="pres" aria-selected="false">Presidencial (Argentina)</button>
+        </div>
+        <div class="sys" id="sys" data-reveal>
+          <div class="sys-diagram">
+            <div class="sys-node sys-pueblo">Pueblo</div>
+            <svg class="sys-arrows" viewBox="0 0 300 220" aria-hidden="true">
+              <path class="arr arr-parl" d="M150 40 L150 95" />
+              <path class="arr arr-parl" d="M150 135 L150 180" />
+              <path class="arr arr-pres" d="M120 40 C60 90 60 140 80 180" />
+              <path class="arr arr-pres" d="M180 40 C240 90 240 140 220 180" />
+            </svg>
+            <div class="sys-node sys-parlamento">Parlamento / Congreso</div>
+            <div class="sys-node sys-ejecutivo">Ejecutivo</div>
+          </div>
+          <div class="sys-text">
+            <div data-sys-panel="parl">
+              <h3>Gobierno parlamentario</h3>
+              <p>Los legisladores se reúnen y <b>eligen al ejecutivo</b>, y a veces pueden cambiarlo si lo creen conveniente.</p>
+              <ul class="ticks">
+                <li><b>Monarquía parlamentaria o constitucional:</b> el <b>rey</b> es Jefe de Estado y el <b>primer ministro</b> (elegido por el parlamento) es Jefe de Gobierno. Ejemplo: <b>España</b>.</li>
+                <li><b>República parlamentaria:</b> no hay rey; un <b>presidente</b> puede ser Jefe de Estado y el <b>primer ministro</b>, Jefe de Gobierno.</li>
+              </ul>
+            </div>
+            <div data-sys-panel="pres" hidden>
+              <h3>Presidente y Congreso, por separado</h3>
+              <p>En Argentina el pueblo vota al <b>presidente</b> y a los <b>legisladores</b> en elecciones distintas. Por eso un presidente puede ganar y no tener mayoría en el Congreso.</p>
+              <p>Esto es la clave del <a href="#tp6">TP6</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-light" id="republica" data-label="TP5 · La república">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>c</span>
+          <h2 class="display" data-reveal><em>Res publica</em>: la cosa de todos</h2>
+          <p class="lede" data-reveal>“República” viene del latín <i>res publica</i>, cosa pública o de interés común. Para ser republicano, un gobierno necesita estos <b>cinco pilares</b> (pág. 46).</p>
+        </div>
+
+        <div class="temple" id="temple">
+          <div class="temple-roof"><span>República</span></div>
+          <div class="pillars">
+            <div class="pillar"><span class="p-col"></span><h4>Periodicidad de mandatos</h4><p>Nadie gobierna indefinidamente: hay un <b>período fijado</b> por la Constitución o las leyes.</p></div>
+            <div class="pillar"><span class="p-col"></span><h4>Soberanía popular</h4><p>Los ciudadanos deciden con el <b>voto</b>: eligen representantes o participan en consultas y referéndums.</p></div>
+            <div class="pillar"><span class="p-col"></span><h4>División de poderes</h4><p>Para evitar abusos: el <b>Legislativo</b> hace las leyes, el <b>Ejecutivo</b> administra, el <b>Judicial</b> las aplica y castiga su incumplimiento.</p></div>
+            <div class="pillar"><span class="p-col"></span><h4>Responsabilidad de los funcionarios</h4><p>Responden por sus actos. Controles: <b>juicio político</b>, Ministerio Público, Auditoría General y Defensor del Pueblo.</p></div>
+            <div class="pillar"><span class="p-col"></span><h4>Publicidad de los actos</h4><p>El pueblo debe saber qué hace el gobierno para controlarlo: <b>Boletín Oficial</b>, Diarios de Sesiones y prensa independiente.</p></div>
+          </div>
+          <div class="temple-base"></div>
+        </div>
+
+        <div class="trap trap-light" data-reveal>
+          <div class="trap-icon" aria-hidden="true">!</div>
+          <div>
+            <h3>Trampa: república <em>no</em> es sinónimo de democracia</h3>
+            <p>Muchas veces se las asocia, pero una república puede ser <b>aristocrática</b> (solo un grupo reducido puede votar, ser votado o ejercer el poder) o <b>democrática</b> (pág. 47).</p>
+          </div>
+        </div>
+
+        <div class="boxes">
+          <div class="box box-criollo" data-reveal>
+            <span class="tag tag-gold">En criollo</span>
+            <p>En una república nadie se queda para siempre, el poder no está en una sola mano, el que la embarra responde y todo lo que hace el gobierno se publica. Si falla un pilar, el techo se tambalea.</p>
+          </div>
+          <div class="box box-examen" data-reveal>
+            <span class="tag tag-wine">Para la clase</span>
+            <ul class="chips"><li>res publica</li><li>periodicidad</li><li>soberanía popular</li><li>división de poderes</li><li>responsabilidad</li><li>publicidad</li><li>aristocrática o democrática</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="regimen" data-label="TP5 · Dictadura y régimen">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>d·e</span>
+          <h2 class="display" data-reveal>De <em>facto</em>: de hecho</h2>
+        </div>
+
+        <div class="defacto" data-reveal>
+          <p class="defacto-word"><span>de facto</span> = <span>de hecho</span></p>
+          <p>Sin reconocimiento jurídico: por la fuerza de los hechos (pág. 45). Un pequeño núcleo da un <b>golpe</b>, toma el gobierno y se mantiene todo lo que puede o lo que decida (pág. 46).</p>
+          <div class="defacto-vs">
+            <div><b>República</b><span>período determinado</span></div>
+            <div><b>Monarquía</b><span>hereditaria, de por vida</span></div>
+            <div class="is-bad"><b>Dictadura</b><span>por la fuerza, sin plazo</span></div>
+          </div>
+        </div>
+
+        <p class="lede" data-reveal style="margin-top:60px">Para varios autores importa menos la <b>forma</b> de gobierno que el <b>régimen</b>: la dirección ideológica con que se ejerce el poder. Una misma forma, con instituciones parecidas, puede ser una democracia o una autocracia (págs. 47-48).</p>
+
+        <div class="tree" id="tree">
+          <div class="tree-root" data-reveal>Régimen político</div>
+          <div class="tree-branches">
+            <div class="tree-col" data-reveal>
+              <div class="tree-node tree-demo">Democracia</div>
+              <p>Gobierna todo el pueblo, directa o indirectamente. Decide la mayoría y respeta a la minoría.</p>
+            </div>
+            <div class="tree-col" data-reveal>
+              <div class="tree-node tree-auto">Autocracia</div>
+              <p>Un hombre, un grupo o un partido manda <b>sin control real del pueblo</b>. El mando se concentra en el ejecutivo; los otros poderes no existen o le están subordinados.</p>
+              <div class="tree-sub">
+                <div class="tree-leaf"><b>Autoritario</b><span>La concentración del poder impide o dificulta muchísimo la participación ciudadana. Se los suele llamar <b>dictaduras</b>.</span></div>
+                <div class="tree-leaf tree-leaf-dark"><b>Totalitario</b><span>El Estado abarca <b>toda</b> la vida política, individual y social. Partido único, control total y <b>terror</b>, para modelar a las personas según la ideología.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-slot" data-reveal><div class="game" id="gameRegimen"></div></div>
+
+        <h3 class="sub-title" data-reveal>f) Verdadero o falso</h3>
+        <div class="grid-2">
+          <div class="card card-verdict" data-reveal>
+            <p class="verdict verdict-f">FALSO</p>
+            <h3>“En Argentina siempre existieron gobiernos democráticos”</h3>
+            <p>Un gobierno de facto toma el poder por un <b>golpe</b>, sin reconocimiento jurídico, no por el voto (págs. 45-46). El texto (pág. 44) menciona golpes con apoyo militar y de EE. UU., y la <b>última dictadura argentina</b>. Si hubo gobiernos de facto, no es cierto el “siempre”.</p>
+          </div>
+          <div class="card" data-reveal>
+            <p class="verdict verdict-q">A COMPLETAR</p>
+            <h3>“El gobierno de Maduro, en Venezuela, es una dictadura”</h3>
+            <p>Tu TP deja este caso para completar con lo visto en clase. Usá el detector de abajo: marcá los criterios del texto que se cumplen según lo que vieron.</p>
+          </div>
+        </div>
+
+        <div class="detector" id="detector" data-reveal>
+          <p class="kicker">Herramienta · Detector de autocracias</p>
+          <h3>¿Qué criterios del texto se cumplen en el caso?</h3>
+          <label><input type="checkbox" /> <span>Un pequeño núcleo tomó o retiene el gobierno <b>por la fuerza</b> y no por las normas (pág. 46).</span></label>
+          <label><input type="checkbox" /> <span>El poder se ejerce <b>sin un real control del pueblo</b> sobre sus actos (pág. 48).</span></label>
+          <label><input type="checkbox" /> <span>El mando está <b>concentrado en el ejecutivo</b> (pág. 48).</span></label>
+          <label><input type="checkbox" /> <span>Los otros poderes <b>no existen o están subordinados</b> al ejecutivo (pág. 48).</span></label>
+          <label><input type="checkbox" /> <span>La concentración del poder <b>impide o dificulta extremadamente</b> la participación ciudadana (pág. 48).</span></label>
+          <label><input type="checkbox" /> <span>Se <b>suspenden derechos</b> como la libertad y los derechos políticos (pág. 40).</span></label>
+          <div class="det-meter"><span class="det-bar"><i id="detBar"></i></span><p id="detOut">Marcá los criterios que se cumplen.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TP6 · GOBERNABILIDAD
+         ========================================================= -->
+    <section class="tp-cover" id="tp6" data-label="TP6 · Ganar no alcanza">
+      <div class="tp-cover-inner">
+        <p class="kicker">Trabajo práctico</p>
+        <p class="tp-big" data-cover>6</p>
+        <h2 class="tp-title">Ganar no es gobernar</h2>
+        <p class="tp-sub">Milei y el Congreso, para qué sirven los debates y tres problemas federales.</p>
+      </div>
+    </section>
+
+    <section class="chapter" id="milei" data-label="TP6 · ¿Por qué no le votan las leyes?">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>2</span>
+          <h2 class="display" data-reveal>Ganó con más del <em>55%</em>… ¿y entonces?</h2>
+          <p class="lede" data-reveal>Actividad 2. Javier Milei ganó el <b>balotaje del 19/11/2023</b> con más del 55%. Pero las bancas del Congreso se definieron antes, en la <b>primera vuelta del 22/10</b>, y ahí la historia fue otra.</p>
+        </div>
+
+        <div class="two-votes" data-reveal>
+          <div class="vote vote-1"><span class="vote-date">22 / 10 / 2023</span><b>Primera vuelta</b><p>Se eligen presidente <b>y legisladores</b>.</p></div>
+          <div class="vote-arrow" aria-hidden="true">→</div>
+          <div class="vote vote-2"><span class="vote-date">19 / 11 / 2023</span><b>Balotaje</b><p>Se elige <b>solo al presidente</b>. Las bancas no cambian.</p></div>
+        </div>
+
+        <div class="bars" id="bars" data-reveal>
+          <p class="kicker">Primera vuelta · escrutinio definitivo (La Nación)</p>
+          <div class="bar-row"><span class="bar-name">Massa <small>Unión por la Patria</small></span><span class="bar-track"><i data-v="36.78"></i></span><span class="bar-val">36,78%</span></div>
+          <div class="bar-row bar-me"><span class="bar-name">Milei <small>La Libertad Avanza</small></span><span class="bar-track"><i data-v="29.99"></i></span><span class="bar-val">29,99%</span></div>
+          <div class="bar-row"><span class="bar-name">Bullrich <small>Juntos por el Cambio</small></span><span class="bar-track"><i data-v="23.81"></i></span><span class="bar-val">23,81%</span></div>
+          <div class="bar-row"><span class="bar-name">Schiaretti</span><span class="bar-track"><i data-v="6.73"></i></span><span class="bar-val">6,73%</span></div>
+          <div class="bar-row"><span class="bar-name">Bregman</span><span class="bar-track"><i data-v="2.70"></i></span><span class="bar-val">2,70%</span></div>
+          <span class="bar-key">45%: ganaba sin balotaje</span>
+          <p class="note small">Nadie llegó al 45%, ni al 40% con 10 puntos de ventaja (arts. 97 y 98 de la Constitución). Por eso hubo balotaje.</p>
+        </div>
+      </div>
+
+      <div class="scrolly" data-scrolly="congreso">
+        <div class="scrolly-visual">
+          <div class="chamber" aria-hidden="true">
+            <p class="chamber-name" id="chamberName">Diputados · 257 bancas</p>
+            <svg id="hemi" viewBox="0 0 400 240"></svg>
+            <p class="chamber-legend"><span class="lg lg-lla"></span>La Libertad Avanza <span class="lg lg-q"></span>Quórum</p>
+          </div>
+        </div>
+        <div class="scrolly-steps">
+          <div class="step" data-step="0"><div class="step-card"><span class="step-n">1</span><h3>Son dos votos distintos</h3><p>El balotaje elige solo al presidente. El Congreso salió del voto de octubre, repartido entre tres fuerzas grandes. En Argentina presidente y legisladores se eligen <b>por separado</b>; en un sistema parlamentario, en cambio, los legisladores eligen al ejecutivo (pág. 47).</p></div></div>
+          <div class="step" data-step="1"><div class="step-card"><span class="step-n">2</span><h3>Muy pocas bancas</h3><p>LLA quedó con <b>menos del 15%</b> de Diputados. Para sesionar hace falta <b>quórum</b>: la mitad más uno, <b>129</b> de 257.</p></div></div>
+          <div class="step" data-step="2"><div class="step-card"><span class="step-n">2</span><h3>Y en el Senado, peor</h3><p>Apenas <b>7 senadores</b> de 72 (menos del 10%). El quórum es <b>37</b>.</p></div></div>
+          <div class="step" data-step="3"><div class="step-card"><span class="step-n">3·4</span><h3>La oposición, primera minoría</h3><p>Unión por la Patria quedó <b>primera minoría en las dos cámaras</b>, con un poder de veto significativo. Y aun sumando a todo el PRO, LLA seguiría <b>muy por debajo del quórum</b> (El Cronista).</p></div></div>
+          <div class="step" data-step="4"><div class="step-card step-gold"><span class="step-n">5</span><h3>Las leyes necesitan las dos cámaras</h3><p>El Congreso es <b>bicameral</b>. Con división de poderes, el Ejecutivo <b>no legisla</b>: sus promesas que requieren leyes dependen del Congreso. Hay que <b>negociar</b>.</p></div></div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <figure class="mega-quote" data-reveal>
+          <blockquote>Ganar las elecciones no es lo mismo que tener gobernabilidad.</blockquote>
+          <figcaption>Con 29,99% en primera vuelta y pocas bancas, todo depende de la capacidad de negociación.</figcaption>
+        </figure>
+        <div class="game-slot" data-reveal><div class="game" id="gameVueltas"></div></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-light" id="debates" data-label="TP6 · Debates y programas">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>3</span>
+          <h2 class="display" data-reveal>¿Sirven los <em>debates</em>?</h2>
+          <p class="lede" data-reveal><b>Sí</b>, y justamente porque el mandato es <b>no vinculante</b>: nadie puede obligar jurídicamente a un candidato a cumplir lo que prometió. Entonces votás con la información que juntás antes. Los debates y los programas <b>son</b> esa información.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card card-light" data-reveal>
+            <h3>Conecta con la república</h3>
+            <p><b>Soberanía popular:</b> el voto solo es una decisión informada si se conocen las propuestas.</p>
+            <p><b>Publicidad de los actos:</b> el pueblo tiene que poder saber qué hace (y qué piensa hacer) el gobierno.</p>
+          </div>
+          <div class="card card-light" data-reveal>
+            <h3>Tres razones</h3>
+            <ul class="ticks">
+              <li><b>Comparar</b> a todos a la vez, frente a las mismas preguntas.</li>
+              <li><b>Registro público:</b> si incumple no hay sanción jurídica, pero sí un <b>costo político</b>: perder votos en la elección siguiente (mandatos periódicos).</li>
+              <li>Muestran <b>cómo</b> piensa gobernar: con qué recursos y con qué apoyo en el Congreso.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="trap trap-light" data-reveal>
+          <div class="trap-icon" aria-hidden="true">!</div>
+          <div>
+            <h3>No confundir</h3>
+            <p>Incumplir una <b>promesa de campaña</b> tiene un costo político. Otra cosa es la <b>responsabilidad de los funcionarios</b> por sus actos de gobierno, que sí se controla con juicio político, Ministerio Público, Auditoría General y Defensor del Pueblo.</p>
+          </div>
+        </div>
+
+        <h3 class="sub-title" data-reveal>¿En qué fuerza es más creíble una propuesta?</h3>
+        <p class="note" data-reveal>No depende del nombre del partido, sino de criterios que podés verificar:</p>
+        <div class="criteria">
+          <div class="crit" data-reveal><span>1</span><h4>Gobernabilidad</h4><p>¿Tiene <b>bancas propias</b> o capacidad de armar acuerdos para convertir la propuesta en ley?</p></div>
+          <div class="crit" data-reveal><span>2</span><h4>Antecedentes</h4><p>Si ya gobernó una provincia o un municipio, se puede comparar <b>lo que prometió con lo que hizo</b>.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="federal" data-label="TP6 · Problemáticas federales">
+      <div class="wrap">
+        <div class="chapter-head">
+          <span class="chapter-num" data-reveal>3a</span>
+          <h2 class="display" data-reveal>La plata de las <em>provincias</em></h2>
+          <p class="lede" data-reveal>Tres problemas federales con un mismo fondo: <b>cómo se reparten los recursos</b> entre la Nación y las provincias.</p>
+        </div>
+
+        <div class="fed">
+          <article class="fed-card" data-reveal>
+            <span class="fed-n">1</span>
+            <h3>Cae la coparticipación</h3>
+            <p>La coparticipación es el <b>reparto de impuestos nacionales</b> entre Nación y provincias. Primer semestre 2026 vs. 2025 (Politikón Chaco, en Letra P):</p>
+            <div class="stats">
+              <div class="stat"><b data-count="-2.8" data-dec="1" data-suffix="%">0</b><span>transferencias automáticas</span></div>
+              <div class="stat"><b data-count="-4.3" data-dec="1" data-suffix="%">0</b><span>coparticipación</span></div>
+              <div class="stat"><b data-count="1.11" data-dec="2" data-prefix="$" data-suffix=" bill.">0</b><span>menos para provincias y CABA</span></div>
+            </div>
+          </article>
+          <article class="fed-card" data-reveal>
+            <span class="fed-n">2</span>
+            <h3>ATN y combustibles</h3>
+            <p>En junio de 2025, gobernadores presentaron un reclamo conjunto con un borrador de ley: repartir los <b>Aportes del Tesoro Nacional</b> según la coparticipación y redistribuir el <b>impuesto a los combustibles</b> (Sitio Andino).</p>
+            <div class="stats">
+              <div class="stat"><b data-count="22" data-dec="0" data-suffix=" de 24">0</b><span>distritos se sumaron</span></div>
+            </div>
+          </article>
+          <article class="fed-card" data-reveal>
+            <span class="fed-n">3</span>
+            <h3>Adelantos y recortes</h3>
+            <p>Un decreto de abril de 2026 habilitó adelantos de coparticipación al 15%, a devolver en el año. Jaldo (Tucumán): la Nación adelanta fondos que ya les corresponden y los obliga a devolverlos (El Cronista).</p>
+            <div class="stats">
+              <div class="stat"><b data-count="12" data-dec="0">0</b><span>provincias habilitadas</span></div>
+              <div class="stat"><b data-count="-59.1" data-dec="1" data-suffix="%">0</b><span>envíos discrecionales (1er trim.)</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="link-back" data-reveal>
+          <span class="tag tag-blue">Conexión con el TP4</span>
+          <p>Todo esto toca un atributo del Estado: el <b>monopolio fiscal</b>, el control de sus propios recursos mediante impuestos y rentas (pág. 40).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARENA ============ -->
+    <section class="arena" id="arena" data-label="Zona de juegos">
+      <div class="wrap">
+        <p class="kicker" data-reveal>Zona de juegos</p>
+        <h2 class="display" data-reveal>Ahora, <em>probate</em>.</h2>
+        <p class="lede" data-reveal>Cuatro juegos que mezclan los tres TP. Ninguno dura más de dos minutos.</p>
+
+        <div class="tabs" role="tablist" data-reveal id="arenaTabs">
+          <button role="tab" class="tab is-on" data-tab="formas" aria-selected="true">Ordená la historia</button>
+          <button role="tab" class="tab" data-tab="gobiernos" aria-selected="false">¿Qué gobierno es?</button>
+          <button role="tab" class="tab" data-tab="vf" aria-selected="false">V o F contrarreloj</button>
+          <button role="tab" class="tab" data-tab="fichas" aria-selected="false">Fichas</button>
+        </div>
+
+        <div class="panels">
+          <div class="panel is-on" data-panel="formas"><div class="game" id="gameFormas"></div></div>
+          <div class="panel" data-panel="gobiernos" hidden><div class="game" id="gameGobiernos"></div></div>
+          <div class="panel" data-panel="vf" hidden><div class="game" id="gameVF"></div></div>
+          <div class="panel" data-panel="fichas" hidden><div class="game" id="gameFichas"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIMULACRO ============ -->
+    <section class="simulacro" id="simulacro" data-label="Simulacro">
+      <div class="wrap">
+        <p class="kicker" data-reveal>Practicá como en la evaluación</p>
+        <h2 class="display" data-reveal>Simulacro</h2>
+        <p class="lede" data-reveal>Respondé con tus palabras. Después tocá <b>Corregir</b>: te marco qué palabras clave usaste y te muestro una respuesta modelo.</p>
+        <div class="sim" id="sim"></div>
+      </div>
+    </section>
+
+    <!-- ============ MACHETE ============ -->
+    <section class="machete" id="machete" data-label="Repaso en 60 segundos">
+      <div class="wrap">
+        <p class="kicker" data-reveal>Último repaso</p>
+        <h2 class="display" data-reveal>Todo en <em>60 segundos</em></h2>
+        <ol class="mach">
+          <li data-reveal><b>Estado:</b> organización histórica con monopolio de la fuerza, territorio, población, normas y reconocimiento. Le faltan a la definición: monopolio fiscal, burocracia y soberanía.</li>
+          <li data-reveal><b>Territorio:</b> virreinato enorme (1776) → se achica (1811-28) → crece (1878-85) → Chile (1881, 1984) → plataforma continental (2020). Problemas: Malvinas y plataforma.</li>
+          <li data-reveal><b>Soberanía:</b> poder supremo, interna (nadie arriba) y externa (independencia). En democracia reside en el pueblo.</li>
+          <li data-reveal><b>Formas de Estado:</b> antiguo, medieval, moderno (absolutista), liberal, oligárquico, totalitario, de Bienestar, burocrático-autoritario, neoliberal.</li>
+          <li data-reveal><b>Gobiernos por cantidad:</b> monarquía (uno), aristocracia u oligarquía (pocos), democracia (todos).</li>
+          <li data-reveal><b>Por el ejecutivo:</b> monarquía (de por vida), república (período), dictadura (golpe). Parlamentario: el parlamento elige al ejecutivo.</li>
+          <li data-reveal><b>República:</b> periodicidad, soberanía popular, división de poderes, responsabilidad y publicidad. Puede ser aristocrática o democrática.</li>
+          <li data-reveal><b>Régimen:</b> democracia vs. autocracia; la autocracia puede ser autoritaria (dictadura) o totalitaria (control total y terror).</li>
+          <li data-reveal><b>TP6:</b> Milei ganó el balotaje pero el Congreso salió de la primera vuelta (29,99%): pocas bancas y lejos del quórum. Ganar ≠ gobernabilidad.</li>
+          <li data-reveal><b>Debates:</b> el mandato es no vinculante, así que la información previa es todo. Federalismo: cae la coparticipación → monopolio fiscal.</li>
+        </ol>
+        <p class="final" data-reveal>Éxitos. <em>Res publica.</em></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p>Basado en los TP 4, 5 y 6 de Ciudadanía y Política (Unidad 2, Estado y Gobierno) y en el texto de clase, págs. 39 a 48. Los datos de TP6 citan a La Nación, BAE Negocios, El Cronista, Letra P y Sitio Andino.</p>
+    <button class="btn btn-ghost" id="resetProgress" type="button">Reiniciar progreso de juegos</button>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
